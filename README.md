@@ -20,10 +20,9 @@ The project aimed to create a simulated network attack environment using Virtual
 - Networking: Internal Network Configuration in VirtualBox
 
 ## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
 
-Every screenshot should have some text explaining what the screenshot is about.
+1. **Network Configuration**:
+     * Set both VMs to use an internal network for isolated communication.
+     * Verify the connection using the ping command.
 
-Example below.
 
-*Ref 1: Network Diagram*
