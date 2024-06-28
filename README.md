@@ -1,25 +1,23 @@
-# Network Traffic Analysis and Threat Detection with Wireshark
+# Simulating Cyber Attacks and Log Analysis with VirtualBox and Splunk
 
 ## Objective
-[Brief Objective - Remove this afterwards]
-
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
+The project aimed to create a simulated network attack environment using VirtualBox to connect a Windows 10 VM (victim) and a Kali Linux VM (attacker). The primary goal was to execute an attack and analyze the resulting logs with Splunk to understand attack patterns and enhance network security skills.
 
 ### Skills Learned
-[Bullet Points - Remove this afterwards]
 
-- Advanced understanding of SIEM concepts and practical application.
-- Proficiency in analyzing and interpreting network logs.
-- Ability to generate and recognize attack signatures and patterns.
-- Enhanced knowledge of network protocols and security vulnerabilities.
-- Development of critical thinking and problem-solving skills in cybersecurity.
+- **Virtual Machine Management:** Setting up and managing virtual machines using Oracle VM VirtualBox.
+- **Penetration Testing:** Using Metasploit for vulnerability exploitation and payload delivery.
+- **Malware Creation:** Ability to create and deploy custom malware using 'msfvenom' with a reverse TCP payload.
+- **SIEM Log Analysis:** Using Splunk for log ingestion, querying, and analysis to detect and investigate suspicious activities.
+- **Command-Line Proficiency:** Executing various command-line tools and utilities on both Windows and Linux platforms.
+- **Cybersecurity Concepts:** Understanding of attack vectors, defense mechanisms, and network security best practices.
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
 
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+- Virtualization Software: Oracle VM VirtualBox
+- Operating Systems: Windows 10 (Victim) and Kali Linux (Attacker)
+- Security Tools: Metasploit Framework, Nmap, Splunk
+- Networking: Internal Network Configuration in VirtualBox
 
 ## Steps
 drag & drop screenshots here or use imgur and reference them using imgsrc
