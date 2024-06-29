@@ -38,3 +38,9 @@ The project aimed to create a simulated network attack environment using Virtual
      ![image alt](https://github.com/HemantVarunParas/Cyber-Attacks-and-Log-Analysis-with-VirtualBox-and-Splunk/blob/dc126819e54bc31e9c6ad753d6717cc188d76ed8/Project%20Images/Screenshot%202024-06-28%20135945.png)
 
 
+4. **Setting Up Metasploit Handler**:
+     * Opened 'msfconsole' and configured a handler to listen for incoming connections. Achieved this by using command 'use/exploit/multi/handler' and set the payoad and LHOST/LPORT to match the malware configuration.
+     * By setting up a metasploit handler, you set up a listener that waits for the victim's machine to connect back to the attacker's machine. This connection is established when the victim executes the malware, allowing the attacker to gain control over the victim's machine through a Meterpreter session.
+   
+     <!-- ![image alt](https://github.com/HemantVarunParas/Cyber-Attacks-and-Log-Analysis-with-VirtualBox-and-Splunk/blob/dc126819e54bc31e9c6ad753d6717cc188d76ed8/Project%20Images/Screenshot%202024-06-28%20135945.png)
+
