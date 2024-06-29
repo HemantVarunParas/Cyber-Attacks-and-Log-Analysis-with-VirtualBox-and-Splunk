@@ -49,4 +49,19 @@ The project aimed to create a simulated network attack environment using Virtual
      * Set up a simple HTTP server on Kali for file delivery using 'python3 -m http.server 9999'.
      * On Windows VM, disabled antivirus, navigated to the Kali IP on port 9999, downloaded, and executed the malware.
 
-     ![image alt](https://github.com/HemantVarunParas/Cyber-Attacks-and-Log-Analysis-with-VirtualBox-and-Splunk/blob/dc126819e54bc31e9c6ad753d6717cc188d76ed8/Project%20Images/Screenshot%202024-06-28%20135945.png)
+     ![image alt](https://github.com/HemantVarunParas/Cyber-Attacks-and-Log-Analysis-with-VirtualBox-and-Splunk/blob/3ab03dea89bf80ece7dd3bf85ad93ff1da2bf86a/Project%20Images/Screenshot%202024-06-28%20214054.png)
+     ![image alt](https://github.com/HemantVarunParas/Cyber-Attacks-and-Log-Analysis-with-VirtualBox-and-Splunk/blob/3ab03dea89bf80ece7dd3bf85ad93ff1da2bf86a/Project%20Images/WindowsVM%20(current)%20%5BRunning%5D%20-%20Oracle%20VM%20VirtualBox%206_23_2024%205_47_05%20PM.png)
+
+6. **Verifying The Established Connection**:
+     * To verify that the malware executed correctly and that there's an established connection between the client and attacker we can use the command 'netstat -anob'. This command will show you a list of all active network connections. Furthermore, we can see an established connection from the client to the attacker through the "Resume.pdf.exe" file.
+     * We can also verify through Task Manager. We see that "Resume.pdf.exe" is running through PID:8028. 
+
+     ![image alt](https://github.com/HemantVarunParas/Cyber-Attacks-and-Log-Analysis-with-VirtualBox-and-Splunk/blob/fef68f7ed68eb29b9525a952c1d0836e00828928/Project%20Images/WindowsVM%20(current)%20%5BRunning%5D%20-%20Oracle%20VM%20VirtualBox%206_23_2024%209_56_44%20PM.png)
+     ![image alt](https://github.com/HemantVarunParas/Cyber-Attacks-and-Log-Analysis-with-VirtualBox-and-Splunk/blob/fef68f7ed68eb29b9525a952c1d0836e00828928/Project%20Images/WindowsVM%20(current)%20%5BRunning%5D%20-%20Oracle%20VM%20VirtualBox%206_23_2024%209_58_09%20PM.png)
+
+7. **Exploiting the Victim Machine**:
+     * 
+     *
+
+     ![image alt]()
+     ![image alt]()     
