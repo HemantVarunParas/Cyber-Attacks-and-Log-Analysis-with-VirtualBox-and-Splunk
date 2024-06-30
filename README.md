@@ -60,8 +60,18 @@ The project aimed to create a simulated network attack environment using Virtual
      ![image alt](https://github.com/HemantVarunParas/Cyber-Attacks-and-Log-Analysis-with-VirtualBox-and-Splunk/blob/fef68f7ed68eb29b9525a952c1d0836e00828928/Project%20Images/WindowsVM%20(current)%20%5BRunning%5D%20-%20Oracle%20VM%20VirtualBox%206_23_2024%209_58_09%20PM.png)
 
 7. **Exploiting the Victim Machine**:
-     * 
-     *
+     * On Kali, used Meterpreter’s 'shell' command to gain a shell on the Windows VM.
+     * Ran 'net user', 'net localgroup', and 'ipconfig' to gather information. Respectively, the commands will list all user accounts on the Windows VM, list all local groups and their members, and display network configuration details.
 
-     ![image alt]()
-     ![image alt]()     
+     ![image alt](https://github.com/HemantVarunParas/Cyber-Attacks-and-Log-Analysis-with-VirtualBox-and-Splunk/blob/f053a13068332649f02c6543458fd8c8083022d9/Project%20Images/kali-linux-2024.2-virtualbox-amd64%20(Baseline)%20%5BRunning%5D%20-%20Oracle%20VM%20VirtualBox%206_23_2024%209_59_08%20PM.png)
+     ![image alt](https://github.com/HemantVarunParas/Cyber-Attacks-and-Log-Analysis-with-VirtualBox-and-Splunk/blob/f053a13068332649f02c6543458fd8c8083022d9/Project%20Images/kali-linux-2024.2-virtualbox-amd64%20(Baseline)%20%5BRunning%5D%20-%20Oracle%20VM%20VirtualBox%206_23_2024%209_59_50%20PM.png)     
+
+8. **Log Analysis**:
+     * Within Splunk Enterprise, querying 'index=endpoint' in the "Search & Reporting" section will show all the data ingested into the environment. Additionally, querying 'index=endpoint 192.168.20.11' showed that the attacker targeted one destination port which is port 3389 (RDP)
+     * Querying 'index=endpoint Resume.pdf.exe' will show various event codes, the first event code shows "Resume.pdf.exe" spawning cmd and executing 'net user', 'net localgroup', and 'ipconfig' commands.
+
+     ![image alt](https://github.com/HemantVarunParas/Cyber-Attacks-and-Log-Analysis-with-VirtualBox-and-Splunk/blob/6c9575c4efdf422e237e928ac97a2c9de5820ffc/Project%20Images/Screenshot%202024-06-29%20201028.png)
+     ![image alt](https://github.com/HemantVarunParas/Cyber-Attacks-and-Log-Analysis-with-VirtualBox-and-Splunk/blob/6c9575c4efdf422e237e928ac97a2c9de5820ffc/Project%20Images/Screenshot%202024-06-29%20201210.png)
+
+## Conclusion
+Through this project, I gained hands-on experience in setting up a virtualized network environment and conducting a simulated cyber attack. I developed skills in network configuration, penetration testing with Metasploit, and log analysis with Splunk. This project enhanced my understanding of network security, attack patterns, and defensive strategies, providing valuable insights into the practical aspects of cybersecurity.
